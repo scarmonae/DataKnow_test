@@ -31,8 +31,8 @@ def custom_parser(file_path):
         return pd.DataFrame(temp_dict)
 
 def main():
-    df = custom_parser(r"C:\Users\USUARIO\OneDrive - Universidad EAFIT\REPOSITORIOS\Test_Dataknow\Prueba_Tecnica\Datos3\OFEI1204.txt")
-
+    df = custom_parser(r"punto_1\OFEI1204.txt")
+    df.to_excel(r"punto_1\resultado.xlsx")
     print(df)
 
 if __name__ == "__main__":
